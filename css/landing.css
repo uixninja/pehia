@@ -1,0 +1,301 @@
+﻿@import url('fonts.css');
+
+html, body {margin:0; padding:0;}
+.container {position: relative; min-height:100%; height: 100%; min-width: 400px;}
+* html .container {height: 100%;}
+* {box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+img {border:none;}
+* {margin:0px; padding:0px;}
+body { font-family: 'Poppins', sans-serif;}
+a { text-decoration:none; color: #4c5f99;}
+a:hover { text-decoration:underline;}
+input:focus {outline: none;}
+
+.screen1 { background: url('../img/landing/landing1_bg.gif'); width: 100%; height: 100vh;}
+.screen1:before { width: 473px; height: 100vh; position: absolute; content: ""; left: 0; top: 0; background: url('../img/landing/land_lt.png') no-repeat 0 0; z-index: 1;}
+.screen1:after { width: 473px; height: 100vh; position: absolute; content: ""; right: 0; top: 0; background: url('../img/landing/land_lt.png') no-repeat 0 0;-moz-transform: scaleX(-1); -o-transform: scaleX(-1);-webkit-transform: scaleX(-1);transform: scaleX(-1); z-index: 1;}
+.screen1 .bg {width: 100%; height: 100vh; position: relative; background: url('../img/landing/land_lb.png') no-repeat left bottom; z-index: 2;}
+.screen1 .bg:before { width: 467px; height: 100vh; position: absolute; content: ""; right: 0; bottom: 0; background: url('../img/landing/land_lb.png') no-repeat 0 bottom; -moz-transform: scaleX(-1); -o-transform: scaleX(-1);-webkit-transform: scaleX(-1);transform: scaleX(-1);}
+
+.logo { z-index: 2; position: relative; width: 135px;}
+.screen1 .logo {position: absolute; left: 50%; margin-left: -68px; top: 50%; margin-top: -270px;}
+.logo img { float: left; vertical-align: middle; -webkit-transition: transform 1s; transition: transform 1s;}
+.logo a:hover img {-ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg);}
+.logo span { float: left; display: inline-block; vertical-align: middle; font-size: 19px; font-weight: 500; color: #fff; line-height: 48px; margin-left: 15px;}
+
+.screen1 .pehia, .screen3 .pehia {width: 100%; height: 220px; position: absolute; top: 50%; left: 0; margin: -110px 0 0 0px; }
+.screen1 .pehia .text, .screen3 .pehia .text { text-align: center; font-size: 210px; color:rgba(67,79,116, .16); line-height: 220px; font-weight: 700; position: absolute; left: 0; top: 0; z-index: 0; width: 100%; margin-top: -28px;}
+.screen1 .pehia .search {width: 100%; position: absolute; left: 0; top: 0; font-size: 22px; line-height: 150%; font-weight: 300; text-align: center; color: #fff;}
+.screen1 .pehia form {width: 100%; padding-top: 42px; font-size: 1px;}
+.screen1 .pehia form input[type=text] {width: 490px; background: #fff; padding: 0 25px; font: 500 12px/48px 'Poppins'; color: #9eaacc; vertical-align: middle;}
+.screen1 .pehia form input[type=submit] {width: 48px; cursor: pointer; background: url('../img/landing/subm_land.gif') no-repeat 0 0; vertical-align: middle; margin-left: 7px;}
+.screen1 .pehia form input, .screen1 .buttons input  {-webkit-box-shadow: 0px 14px 24px 0px rgba(20, 24, 47, 0.29); -moz-box-shadow: 0px 14px 24px 0px rgba(20, 24, 47, 0.29); box-shadow: 0px 14px 24px 0px rgba(20, 24, 47, 0.29); height: 48px; border: none;}
+.screen1 .buttons {width: 100%; height: 40px; position: absolute; top: 50%; left: 0; margin: 150px 0 0 0px; text-align: center; font-size: 1px;}
+.screen1 .buttons .login {background: url('../img/landing/login_land.gif') no-repeat 0 0;}
+.screen1 .buttons input { color: #fff; font-size: 13px; text-transform: uppercase; width: 112px; height: 40px; font-weight: 600;border: none; cursor: pointer;}
+.screen1 .buttons .singup { background: url('../img/landing/singup_land.gif') no-repeat 0 0; margin-left: 8px;}
+
+.screen1 .pehia .scroll_icon { width: 34px; height: 48px; background: url('../img/landing/scroll_ico.png') no-repeat 0 0; position: absolute; left: 50%; top: 50%; margin: 220px 0 0 -17px;}
+.screen1 .pehia .icon {background: url('../img/landing/ico1.png') no-repeat 0 0; position: absolute; left: 50%; top: 50%;}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+.screen1 .pehia .ico1 { width: 13px; height: 13px; background: url('../img/landing/ico1.png') no-repeat 0 0; margin: 23px 0 0 -430px;}
+.screen1 .pehia .ico2 { width: 12px; height: 12px; background: url('../img/landing/ico2.png') no-repeat 0 0; margin: -83px 0 0 -381px;}
+.screen1 .pehia .ico3 { width: 24px; height: 24px; background: url('../img/landing/ico3.png') no-repeat 0 0; margin: -43px 0 0 -383px;}
+.screen1 .pehia .ico4 { width: 5px; height: 5px; background: url('../img/landing/ico4.png') no-repeat 0 0; margin: 70px 0 0 -360px;}
+.screen1 .pehia .ico21 { width: 5px; height: 5px; background: url('../img/landing/ico4.png') no-repeat 0 0; margin: 70px 0 0 -163px;}
+.screen1 .pehia .ico22 { width: 5px; height: 5px; background: url('../img/landing/ico4.png') no-repeat 0 0; margin: 134px 0 0 324px;}
+.screen1 .pehia .ico23 { width: 5px; height: 5px; background: url('../img/landing/ico4.png') no-repeat 0 0; margin: -27px 0 0 360px;}
+.screen1 .pehia .ico5 { width: 9px; height: 9px; background: url('../img/landing/ico5.png') no-repeat 0 0; margin: 124px 0 0 -335px;}
+.screen1 .pehia .ico6 { width: 19px; height: 25px; background: url('../img/landing/ico6.png') no-repeat 0 0; margin: 42px 0 0 -330px;}
+.screen1 .pehia .ico7 { width: 10px; height: 10px; background: url('../img/landing/ico7.png') no-repeat 0 0; margin: -32px 0 0 -306px;}
+.screen1 .pehia .ico24 { width: 10px; height: 10px; background: url('../img/landing/ico7.png') no-repeat 0 0; margin: -175px 0 0 -190px;}
+.screen1 .pehia .ico25 { width: 10px; height: 10px; background: url('../img/landing/ico7.png') no-repeat 0 0; margin: 125px 0 0 285px;}
+.screen1 .pehia .ico8 { width: 26px; height: 22px; background: url('../img/landing/ico8.png') no-repeat 0 0; margin: -56px 0 0 -290px;}
+.screen1 .pehia .ico9 { width: 20px; height: 31px; background: url('../img/landing/ico9.png') no-repeat 0 0; margin: -136px 0 0 -263px;}
+.screen1 .pehia .ico10 { width: 23px; height: 23px; background: url('../img/landing/ico10.png') no-repeat 0 0; margin: -152px 0 0 -187px;}
+.screen1 .pehia .ico11 { width: 13px; height: 25px; background: url('../img/landing/ico11.png') no-repeat 0 0; margin: 91px 0 0 -243px;}
+.screen1 .pehia .ico12 { width: 21px; height: 22px; background: url('../img/landing/ico12.png') no-repeat 0 0; margin: 69px 0 0 -139px;}
+.screen1 .pehia .ico13 { width: 10px; height: 10px; background: url('../img/landing/ico13.png') no-repeat 0 0; margin: -184px 0 0 127px;}
+.screen1 .pehia .ico14 { width: 23px; height: 25px; background: url('../img/landing/ico14.png') no-repeat 0 0; margin: -153px 0 0 126px;}
+.screen1 .pehia .ico15 { width: 23px; height: 23px; background: url('../img/landing/ico15.png') no-repeat 0 0; margin: -152px 0 0 218px;}
+.screen1 .pehia .ico16 { width: 20px; height: 24px; background: url('../img/landing/ico16.png') no-repeat 0 0; margin: -91px 0 0 258px;}
+.screen1 .pehia .ico17 { width: 24px; height: 23px; background: url('../img/landing/ico17.png') no-repeat 0 0; margin: 86px 0 0 267px;}
+.screen1 .pehia .ico18 { width: 17px; height: 24px; background: url('../img/landing/ico18.png') no-repeat 0 0; margin: -14px 0 0 320px;}
+.screen1 .pehia .ico19 { width: 30px; height: 25px; background: url('../img/landing/ico19.png') no-repeat 0 0; margin: 20px 0 0 360px;}
+.screen1 .pehia .ico20 { width: 25px; height: 23px; background: url('../img/landing/ico20.png') no-repeat 0 0; margin: 67px 0 0 147px;}
+
+.loaded .screen1 .pehia .icon { opacity: 1;}
+
+.screen3 {background: url('../img/landing/landing1_bg.gif'); width: 100%; height: 100vh;}
+.screen3:before {width: 467px; height: 100vh; background: url('../img/landing/land2_lt.png') no-repeat 0 0; position: absolute; content: ""; left: 0; top: 0; z-index: 1;}
+.screen3:after { width: 467px; height: 100vh; background: url('../img/landing/land2_lt.png') no-repeat 0 0;position: absolute; content: ""; right: 0; top: 0; -moz-transform: scaleX(-1); -o-transform: scaleX(-1);-webkit-transform: scaleX(-1);transform: scaleX(-1); z-index: 1;}
+.screen3 .logo span, .screen2 .logo span, .screen4 .logo span { font-size: 15px; line-height: 32px; margin-left: 12px;}
+.screen3 .bg {width: 100%; height: 100vh; position: relative; z-index: 2;}
+.screen3 .logo, .screen2 .logo, .screen4 .logo { margin: 0; z-index: 5;}
+.screen3 .pehia .text { font-size: 180px; line-height: 100%;}
+
+
+.screen2 .logo span, .screen4 .logo span { color: #9eaacc;}
+
+
+.screen3 .buttons, .screen2 .buttons, .screen4 .buttons {width: 220px; height: 32px; text-align: right; font-size: 1px; z-index: 5;}
+.screen3 .buttons .login, .screen2 .buttons .login, .screen4 .buttons .login {background: url('../img/landing/login2.gif') no-repeat 0 0;}
+.screen3 .buttons input, .screen2 .buttons input, .screen4 .buttons input { color: #fff; font-size: 13px; text-transform: uppercase; width: 96px; height: 32px; font-weight: 500;border: none; cursor: pointer; -webkit-box-shadow: 0px 14px 27px 0px rgba(20, 24, 47, 0.25); -moz-box-shadow:    0px 14px 27px 0px rgba(20, 24, 47, 0.25);
+box-shadow: 0px 14px 27px 0px rgba(20, 24, 47, 0.25);}
+.screen3 .buttons .singup, .screen2 .buttons .singup, .screen4 .buttons .singup { background: url('../img/landing/singup2.gif') no-repeat 0 0; margin-left: 8px;}
+.screen3 .graph { position: absolute; z-index: 3; width: 100%; height: 498px; bottom: 0; left: 0; background: url('../img/landing/graph2.png') no-repeat 0 bottom; background-size: 100%;}
+
+.screen3 .graph .pointer {width: 56px; height: 56px; position: absolute; background: url('../img/landing/pointer.png') no-repeat 0 0; background-size: 100%;}
+.screen3 .graph .pointer1 {left: 13%; bottom: 50px;}
+.screen3 .graph .pointer2 {left: 37%; bottom: 130px;}
+.screen3 .graph .pointer3 {left: 61%; bottom: 310px;}
+.screen3 .graph .pointer4 {right: 13%; bottom: 500px;}
+
+.screen3 .graph .data {position: absolute; padding-bottom: 110px;}
+.screen3 .graph .data div { font-weight: 600; color: #77a4fe; font-size: 35px; line-height: 150%;}
+.screen3 .graph .data p { font-weight: 300; color: #9eaacc; font-size: 18px; line-height: 100%;}
+.screen3 .graph .data.data4 { margin-right: -100px;}
+
+.screen3 {width: 100%; height: 100vh; position: relative; }
+.screen2 {position: relative; width: 100%; height: 100vh;}
+.screen2 .buttons input, .screen4 .buttons input { -webkit-box-shadow: 0px 4px 17px 0px rgba(20, 24, 47, 0.25); -moz-box-shadow:    0px 4px 17px 0px rgba(20, 24, 47, 0.25); box-shadow: 0px 4px 17px 0px rgba(20, 24, 47, 0.25);}
+
+.centered {max-width: 1440px; position: relative; margin: 0 auto; padding: 40px 40px 0 40px;}
+.centered .logo { float: left;}
+.centered .buttons { float: right;}
+
+.screen2 .head {width: 100%; float: left;}
+.screen2 .image { float: left; width: 620px; position: relative;
+-webkit-perspective: 330px; padding-top: 90px; z-index: 99;
+perspective: 330px;
+
+
+-o-transition: transform 0.2s linear;
+	-ms-transition: transform 0.2s linear;
+	-moz-transition: transform 0.2s linear;
+	-webkit-transition: transform 0.2s linear;
+	transition: transform 0.2s linear;
+	-o-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-webkit-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+    
+    
+    }
+.screen2 .image img { float: left; width: 95%; margin-left: -105px;
+-webkit-transform: rotateX(0deg) rotateY(-20deg);
+transform: rotateX(0deg) rotateY(-20deg);
+-ms-transition: transform 0.2s linear, margin-left 0.2s linear;
+	-moz-transition: transform 0.2s linear, margin-left 0.2s linear;
+	-webkit-transition: transform 0.2s linear, margin-left 0.2s linear;
+	transition: transform 0.2s linear, margin-left 0.2s linear;
+
+
+-webkit-box-shadow: 0px 16px 30px 8px rgba(187, 189, 198, 0.43);
+-moz-box-shadow:    0px 16px 30px 8px rgba(187, 189, 198, 0.43);
+box-shadow:         0px 16px 30px 8px rgba(187, 189, 198, 0.43);
+}
+
+.screen2 .image img:hover {-webkit-transform: rotateX(0deg) rotateY(0deg);
+transform: rotateX(0deg) rotateY(0deg); margin-left: 0 !important;}
+
+
+.screen2 .information { padding-left: 620px; padding-right: 150px; position: relative; color: #9eaacc;}
+.screen2 .information .text, .screen4 .text  { text-align: left; font-size: 140px; color:#f4f5f7; line-height: 100%; font-weight: 700;  z-index: 0; padding-top: 120px;}
+.screen2 .information p, .screen4 .centered > p { font-size: 14px; line-height: 200%; padding-top: 24px;}
+.screen2 .information h2, .screen4 .information h2 { font-size: 30px; line-height: 100%; font-weight: 300; color: #606b8d; margin-top: -70px; padding-bottom: 40px;}
+
+
+.screen4 {width: 100%; height: 100vh; position: relative; }
+.screen4 .text { width: 100%; text-align: center; padding-top: 100px;}
+.screen4 .head { float: left; width: 100%;}
+.screen4 .information { width: 800px; margin: 0 auto; text-align: center; color: #9eaacc;}
+.screen4 .bx-wrapper .bx-viewport { border: none; box-shadow: none; margin-top: 65px; height: 310px !important; background: none;}
+.screen4 .screen4 .bx-default-pager { display: none;}
+.screen4 .bxslider li {width: 270px; height: 270px; -webkit-box-shadow: 0px 12px 30px 0px rgba(20, 24, 47, 0.08);
+-moz-box-shadow:    0px 12px 30px 0px rgba(20, 24, 47, 0.08);
+box-shadow:         0px 12px 30px 0px rgba(20, 24, 47, 0.08);}
+.screen4 .bxslider li .ico { padding-top: 70px; height: 180px; text-align: center; width: 100%; float: left;}
+.screen4 .bxslider li .ico img { display: inline-block;}
+.screen4 .bxslider li > div { float: left; width: 100%; padding: 0 30px; font-size: 13px;}
+.screen4 .bxslider li > p { float: left; width: 100%; padding: 0 30px; font-size: 11px; color: #9eaacc; text-transform: uppercase; padding-top: 5px;  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;}
+.screen4 .bx-wrapper .bx-controls-direction a.bx-next { width: 13px; height: 17px; background: url('../img/landing/str.png') no-repeat 0 0; margin-top: -48px;}
+.screen4 .bx-wrapper .bx-controls-direction a.bx-prev { width: 13px; height: 17px; background: url('../img/landing/str2.png') no-repeat 0 0; margin-top: -48px; }
+.fancybox-type-iframe { overflow: visible !important;}
+
+
+@media screen and (max-width: 1450px) {
+    .screen2 .image {width: 550px;}
+    .screen2 .information { padding-left: 550px;}
+    .screen2 .image img {margin-left: -80px;}
+    .screen1 .logo {margin-top: -240px;}
+    
+}
+
+@media screen and (max-width: 1350px) {
+    .screen2 .image {width: 500px;}
+    .screen2 .information { padding-left: 500px;}
+    .screen2 .information { padding-right: 50px;}
+    .screen2 .information .text {padding-top: 100px;}
+    .screen2 .image img {margin-left: -66px;}
+
+}
+
+@media screen and (max-width: 1200px) {
+    .screen1 .logo {margin-top: -220px;}
+    .screen2 .information .text { font-size: 120px;}
+    .screen2 .image {width: 450px;}
+    .screen2 .information { padding-left: 450px;}
+    .screen2 .information .text {padding-top: 60px;}
+    .screen4 .text { font-size: 100px; padding-top: 50px;}
+    .screen4 .information h2 { margin-top: -50px;}
+    .screen2 .image img {margin-left: -52px;}
+}
+
+
+@media screen and (max-width: 1100px) {
+    .screen1 .buttons { margin-top: 100px;}
+    .screen1 .pehia .scroll_icon {margin-top: 160px;}
+    .screen3 .pehia .text { font-size: 140px;}
+
+}
+
+@media screen and (max-width: 950px) {
+    .screen2 .image {width: 350px;}
+    .screen2 .information { padding-left: 350px; padding-right: 20px;}
+    .screen2 .information .text { font-size: 80px;}
+    .screen2 .information h2 { margin-top: -55px; padding-bottom: 10px;}
+    .screen2 .image img {margin-left: -35px;}
+    
+}
+
+@media screen and (max-width: 850px) {
+    .screen2 .information .text { font-size: 70px;}
+    .screen2 .information h2 { margin-top: -40px;}
+    .screen4 .information { width: auto;}
+    
+}
+
+@media screen and (max-width: 800px) {
+    .screen1 .pehia .icon, .screen1 .scroll_icon { display: none;}
+    .screen1:before, .screen1:after { background-position: 0 -150px;}
+    .screen2 .image {width: 400px;margin: 0 auto; float: none; overflow: hidden; padding-top: 45px; padding-bottom: 70px;}
+    .screen2 .image img { position: relative;}
+    .screen2 .information { padding-left: 0px; padding-bottom: 60px; padding-right: 0; margin-top: -30px;}
+    .screen2 .head { padding-bottom: 13px;}
+    .screen1 .centered { padding-left: 25px; padding-right: 25px;}
+    .screen3:before, .screen3:after { background-position: 0 -120px; width: 305px;}
+    .screen3 .graph .data div { font-size: 27px;}
+    .screen3 .graph .data p { font-size: 14px;}
+    .screen3 .graph .data.data4 { margin-right: -60px;}
+    .screen3 .graph .data.data3 { margin-left: -40px;}
+    .screen2 .information .text { padding-top: 0;}
+
+}
+
+@media screen and (max-width: 700px) {
+    .screen1 .pehia .text { font-size: 130px; line-height: 100%; margin-top: 50px;}
+    .screen1 .pehia form input[type=text] { width: 390px;}
+    .screen3 .pehia .text { font-size: 100px; line-height: 100%; margin-top: 50px;}
+    .screen4 .information .text { font-size: 70px;}
+    .screen4 .information h2 { margin-top: -40px;}
+
+}
+
+@media screen and (max-width: 500px) {
+    .screen1 .pehia form input[type=text] { width: 390px;}
+}
+
+
+
+.screen1, .screen2, .screen3 { display: no1ne;}
+
+.slider { list-style: none;}
+body > .bx-wrapper > .bx-controls > .bx-controls-direction { display: none;}
+body > .bx-wrapper { margin: 0 !important;}
+body > .bx-wrapper > .bx-viewport { box-shadow: none; border:none; left: auto; overflow-y: auto !important;}
+body > .bx-wrapper .bx-pager.bx-default-pager a { width: 17px; height: 22px;  margin: 0; border-radius: 0; background: url('../img/nav.png') no-repeat 0 0;}
+body > .bx-wrapper .bx-pager.bx-default-pager a.active {background: url('../img/nav_act.png') no-repeat 0 0; width: 24px; height: 22px;}
+body > .bx-wrapper .bx-pager { bottom: 25px;}
+
+.fancybox-overlay { background: #f2f2f3 !important;}
+
+
+
+
+
